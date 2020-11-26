@@ -10,7 +10,7 @@ var userSchema = new mongoose.Schema({
     cpf: String,
     data_criacao: String
 },
-{collection: 'usercollection'}
+    { collection: 'usercollection' }
 );
 
-module.exports = {Mongoose:mongoose, UserSchema: userSchema}
+module.exports = { Mongoose: mongoose, UserSchema: userSchema }
