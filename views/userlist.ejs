@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1 class="text-center title-1">Lista de usuários</h1>
+    <ul>
+        <% userlist.forEach(function(user){ %>
+            <li>Nome: <%= user.nome %></li>
+            <li>E-mail: <%= user.email %></li> 
+            <li>Senha: <%= user.senha %></li> 
+            <li>Data de nascimento: <%= user.data_nascimento %></li> 
+            <li>RG: <%= user.rg %></li> 
+            <li>CPF: <%= user.cpf %></li> 
+            <li>Data de criação: <%= user.data_criacao %></li> 
+            <%})%>
+    </ul>
+</body>
+
+
+</html>
