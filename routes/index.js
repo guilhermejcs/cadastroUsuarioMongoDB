@@ -30,7 +30,9 @@ router.post('/adduser', function (req, res) {
   var userDataNascimento = req.body.data_nascimento;
   var userRg = req.body.rg;
   var userCpf = req.body.cpf;
-  var userDataCriacao = req.body.data_criacao;
+  var today = new Date();
+  var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+ today.getFullYear();
+  var userDataCriacao = date;
 
   var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
   var user = new Users({
